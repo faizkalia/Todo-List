@@ -1,0 +1,137 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(83, 82, 82);
+  color: white;
+  margin: 80px auto;
+}
+.container {
+  width: fit-content;
+  background-color: rgb(37, 37, 37);
+  padding: 2rem 1.3rem;
+  border-radius: 10px;
+  
+}
+
+.todo_content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgb(78, 78, 78);
+}
+.input-one {
+  width: 350px;
+}
+.input-two {
+  width: 350px;
+}
+.inputTwo {
+  margin: 0 1.5rem;
+}
+.btn{
+  margin-top: 1.5rem;
+}
+.ul {
+  list-style: none;
+  padding: 0;
+  
+}
+.item-data{
+  box-shadow: 1px,1px,1px,1px rgb(54, 54, 54);
+  background-color: rgb(44, 44, 44);
+}
+.item-data h2{
+  padding: 0.2rem 0;
+  color: rgb(82, 216, 82);
+}
+.todotext {
+  padding: 0 1rem;
+} 
+.item-data{
+  margin-top: 1rem;
+}
+.secondary_Btn {
+  border: none;
+  width: fit-content;
+  background-color: rgb(83, 82, 82);
+}
+.item-data{
+  .completed-data{
+    padding:0.2rem 1rem;
+    margin-bottom: 0;
+  }
+}
+.todotext{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.complete-item-parent{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.active {
+  background-color: rgb(117, 219, 117);
+}
+.del-btn{
+  color:#fff;
+  margin-right:0.5rem;
+  cursor: pointer;
+}
+.complete-icon{
+  display: flex;
+}
+.edit-btn{
+  cursor: pointer;
+}
+.edit-btn:hover{
+  color: skyblue;
+}
+.icons{
+  display: flex;
+  flex-direction: column;
+ 
+}
+.del-btn:hover{
+  color: red;
+}
+@media screen and (max-width: 1000px) {
+  .todo_content{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    justify-items: start;
+    
+  }
+  .inputTwo {
+    margin: 1rem 1rem 1rem 0;
+  }
+  .btn{
+    margin-top: 0;
+    min-width: 350px;
+  }
+  /* .todotext{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 1rem 1rem;
+    
+  } */
+  .item-data{
+    /* display: flex;
+    flex-direction: column; */
+    margin: 1rem 1rem 0 0;
+  }
+}
+@media screen and (max-width: 876px){
+  body {
+    
+    margin: 40px auto;
+  }
+}
+
